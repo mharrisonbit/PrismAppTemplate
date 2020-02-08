@@ -21,7 +21,7 @@ namespace PrismApp
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("/NavigationPage/HomeView");
+            await NavigationService.NavigateAsync("NavigationPage/TabbedPageView?selectedTab=HomeView");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

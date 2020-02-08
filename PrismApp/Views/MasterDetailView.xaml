@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MasterDetailPage
+    x:Class="PrismApp.Views.MasterDetailView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    Visual="Material">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#C4FFD2">
+            <Grid Padding="10,70,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="Home Page">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavBtnClicked}" CommandParameter="home" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="About Page">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavBtnClicked}" CommandParameter="about" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label
+                    Grid.Row="2"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="Lougout">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavBtnClicked}" CommandParameter="logout" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <!--<Button Text="Logout"
+                        Grid.Row="3"
+                        Command="{Binding NavBtnClicked}"
+                        CommandParameter="logout"
+                        Visual="Material"/>-->
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

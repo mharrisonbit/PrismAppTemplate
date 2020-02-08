@@ -2,7 +2,9 @@
 <ContentPage
     x:Class="PrismApp.Views.HomeView"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50*" />
@@ -18,6 +20,6 @@
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Text="Hello from the front page." />
+            Text="homepage" />
     </Grid>
 </ContentPage>

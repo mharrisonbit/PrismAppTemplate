@@ -22,4 +22,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Interfaces\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\HomeView.xaml.cs" />
+  </ItemGroup>
 </Project>

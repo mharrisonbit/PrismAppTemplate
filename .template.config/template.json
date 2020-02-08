@@ -1,0 +1,44 @@
+﻿{
+ "$schema": "http://json.schemastore.org/template",
+ "author": "michaelharrison",
+ "classifications": [],
+ "description": "Empty app with no navigation type",
+ "name": "BasicPrismApp",
+ "defaultName": "BasicPrismApp",
+ "identity": "MyTemplate.PrismApp.CSharp",
+ "groupIdentity": "MyTemplate.PrismApp",
+ "tags": {
+   "language": "C#",
+   "type": "project",
+   "vsmac-category": "multiplat/app/forms"
+ },
+ "shortName": "BasicPrismApp",
+ "sourceName": "BasicPrismApp",
+ "guids": [
+   "{9E75AEDD-6270-417C-896B-031B80406C00}",
+   "{40E90042-B329-4E92-8E83-ACC0F6DAEEBB}",
+   "{097DE335-9F5C-4EE4-ABD7-58E528EF8033}"
+ ],
+ "sources": [
+   {
+     "modifiers": [
+       {
+         "exclude": [
+           ".vs/**/*"
+         ]
+       }
+     ]
+   }
+ ],
+ "primaryOutputs": [
+   {
+     "path": "/BasicPrismApp.csproj"
+   },
+   {
+     "path": "/BasicPrismApp.Android.csproj"
+   },
+   {
+     "path": "/BasicPrismApp.iOS.csproj"
+   }
+ ]
+}

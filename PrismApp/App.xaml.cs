@@ -1,11 +1,12 @@
 ﻿using Prism;
 using Prism.Ioc;
 using Prism.Modularity;
+using PrismApp.ViewModels;
+using PrismApp.Views;
 using Xamarin.Forms;
 
 namespace PrismApp
 {
-    [AutoRegisterForNavigation]
     public partial class App
     {
         /* 
@@ -27,6 +28,7 @@ namespace PrismApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<HomeView, HomeViewModel>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

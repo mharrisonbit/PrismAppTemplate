@@ -1,11 +1,11 @@
 ﻿using Prism;
 using Prism.Ioc;
 using Prism.Modularity;
+using PrismApp.ViewModels;
 using Xamarin.Forms;
 
 namespace PrismApp
 {
-    [AutoRegisterForNavigation]
     public partial class App
     {
         /* 
@@ -27,6 +27,7 @@ namespace PrismApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<TabbedPage, TabbedPageViewModel>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
